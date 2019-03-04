@@ -1,20 +1,18 @@
-# 7574-spark
+# Trabajo práctico final de Sistemas Distribuidos I (7574)
 
-El siguiente trabajo práctico planea 
+- `git clone https://github.com/gguzelj/7574-spark.git`
+- `cd 7574-spark`
 
-## Introducción a spark
-[intro teorica](/doc/introduccion-spark.md)
+## Ejemplos
 
-## Descripción del problema
+- `docker-compose -f examples/docker-compose-two-workers.yml up`
 
-## Soluciones
+### Bible count
 
-## Implementación
+- `docker exec -it examples_master_1 bin/spark-submit /application/simple-count.py`
+- `head examples/results/bible_count/part-00000`
 
-## Resultados
+### Co-occurrences
 
-
-
-http://people.csail.mit.edu/matei/papers/2012/nsdi_spark.pdf
-http://people.csail.mit.edu/matei/papers/2015/sigmod_spark_sql.pdf
-https://jaceklaskowski.gitbooks.io/mastering-apache-spark
+- `docker exec -it examples_master_1 bin/spark-submit /application/co-occurrence.py`
+- `head examples/results/bible_count/part-00000`
