@@ -30,7 +30,7 @@ Luego levantar cluster de spark con dos workers
 - `docker exec -it examples_master_1 bin/spark-submit /application/top-selled.py`
 - `head examples/results/top-selled/part-00000`
 
-### View results
+### View Results
 
 El siguiente programa permite visualizar los resultados del job de co-occurrencias. Permite la busqueda de resultados tanto por id como por descripción de producto
 
